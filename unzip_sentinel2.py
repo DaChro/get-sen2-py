@@ -8,18 +8,18 @@ from sys import argv
 
 
 
-def unzip_products(wd):
+def unzip_products(zipfilesfolder):
 	# create list of zip files in currentfolder
-	zipfiles = [s for s in os.listdir(wd) if ".zip" in s]
+	zipfiles = [s for s in os.listdir(zipfilesfolder) if ".zip" in s]
 
-	print(str(len(zipfiles))+ ' zipfile(s) found. Unzipping...')
+	print(str(len(zipfiles)) + ' zipfile(s) found. Unzipping...')
 
 	for file in zipfiles:
-		zip_ref = zipfile.ZipFile(os.path.join(wd, file), 'r')
-		zip_ref.extractall(os.path.join(wd, 'sentinel2_files'))
+		zip_ref = zipfile.ZipFile(os.path.join(zipfilesfolder, file), 'r')
+		zip_ref.extractall(os.path.join(zipfilesfolder, 'sentinel2_files'))
 		zip_ref.close()
 
-	print('Files unzipped into folder ' + wd + '\sentinel2_files')
+	print('Files unzipped into folder ' + zipfilesfolder + '\sentinel2_files')
 
 
 if __name__ == "__main__":

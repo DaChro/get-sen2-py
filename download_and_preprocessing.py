@@ -5,10 +5,11 @@
 
 
 from sys import argv
+import os
 import download_sentinel2
 import unzip_sentinel2
 import apply_sen2cor
-import os
+import sen2_composites
 
 wd = argv[1]
 user = argv[2]
@@ -18,3 +19,4 @@ password = argv[3]
 download_sentinel2.download_products(wd, user, password)
 unzip_sentinel2.unzip_products(wd)
 apply_sen2cor.run_correction(os.path.join(wd, 'sentinel2_files'))
+sen2_composites.create_composites(os.path.join(wd, 'sentinel2_files'))

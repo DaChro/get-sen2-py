@@ -8,7 +8,7 @@ from sentinelsat import SentinelAPI
 from sys import argv
 
 
-def download_products(wd, user, password):
+def download_products(targetfolder, user, password):
 
 
 	# Create query and download files #
@@ -47,10 +47,10 @@ def download_products(wd, user, password):
 
 	# download selected products
 	print('Found', len(products), 'product(s).')
-	api.download_all(products, directory_path = wd)
+	api.download_all(products, directory_path = targetfolder)
 
 	print("Downloaded " + str(len(products)) + " product(s).")
 
 
 if __name__ == "__main__":
-	download_products(argv[1], argv[2])
+	download_products(argv[1], argv[2], argv[3])
