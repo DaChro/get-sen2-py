@@ -1,7 +1,8 @@
 # This script simply executes the sen2cor processor on all unzipped L1C Sentinel-2 files in a folder.
-# sen2cor needs to be installed (standalone installer) and the direcetory containing
-# "L2A_Process.bat" needs to be added to path system environment variable
 # Takes one input argument, the directory where the unzipped L1C files are
+# sen2cor needs to be installed (standalone installer) and the directory containing
+# "L2A_Process.bat" needs to be added to path system environment variable
+
 
 from sys import argv
 from os import system
