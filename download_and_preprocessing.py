@@ -1,4 +1,4 @@
-# This script imports and runs the functions for downloading, unzippin, atmospheric correction
+# This script imports and runs the functions for downloading, unzipping, atmospheric correction
 # and 4-band composite construction
 # Takes three input parameters, the working directory in which to store the results
 # of the process, the user name and the password for the ESA hub account
