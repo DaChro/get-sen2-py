@@ -1,7 +1,7 @@
 # This script downloads data by tile and can take a list of tiles to download
 # Input parameters are password for ESA hub [2] and path to folder in which to store downloaded
 # images [2]
-# The tile properties are currently hardcoded in the script
+# The tile properties are currently hardcoded in the script --> adapt this to enable flexible selection of search criteria
 
 from collections import OrderedDict
 from sentinelsat import SentinelAPI
