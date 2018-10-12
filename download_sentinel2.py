@@ -1,6 +1,6 @@
 # This script downloads data by tile and can take a list of tiles to download
-# Input parameters are password for ESA hub [2] and path to folder in which to store downloaded
-# images [2]
+# Input parameters are username [2] and password [3] for ESA hub  and path to folder in which to store downloaded
+# images [1]
 # The tile properties are currently hardcoded in the script --> adapt this to enable flexible selection of search criteria
 
 from collections import OrderedDict
